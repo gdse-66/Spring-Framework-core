@@ -1,5 +1,7 @@
 package lk.ijse.gdse66.spring;
 
+import com.edu.ijse.JavaBean;
+import com.edu.ijse.SpringBeanFour;
 import lk.ijse.gdse66.spring.bean.SpringBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -46,6 +48,42 @@ public class AppInitializer{
 
 //        SpringBeanThree sb3 = ctx.getBean(SpringBeanThree.class);
 //        System.out.println(sb3);
+        /*boolean isExistJavaBeanDefinition =
+                ctx.containsBeanDefinition("getJavaBean");
+        System.out.println(isExistJavaBeanDefinition);
+
+        boolean isExistSpringBeanFourDefinition =
+                ctx.containsBeanDefinition("springBeanFour");
+        System.out.println(isExistSpringBeanFourDefinition);
+
+        boolean isExistSpringBeanDefinition =
+                ctx.containsBeanDefinition("springBean");
+        System.out.println(isExistSpringBeanDefinition);*/
+
+        /*JavaBean javaBean = (JavaBean) ctx.getBean("javaBean");
+        System.out.println(javaBean);*/
+
+        /*SpringBeanFour bean1 = ctx.getBean(SpringBeanFour.class);
+        System.out.println(bean1);
+        SpringBeanFour bean2 = ctx.getBean(SpringBeanFour.class);
+        System.out.println(bean2);
+        SpringBeanFour bean3 = ctx.getBean(SpringBeanFour.class);
+        System.out.println(bean3);
+
+        System.out.println("-----------------------------");
+
+        JavaBean javaBean1 = ctx.getBean(JavaBean.class);
+        System.out.println(javaBean1);
+        JavaBean javaBean2 = ctx.getBean(JavaBean.class);
+        System.out.println(javaBean2);
+        JavaBean javaBean3 = ctx.getBean(JavaBean.class);
+        System.out.println(javaBean3);*/
+
+        boolean isExist = ctx.containsBeanDefinition("javaBean");
+        System.out.println(isExist);
+
+        boolean isExist2 = ctx.containsBeanDefinition("springBeanFour");
+        System.out.println(isExist2);
     }
 }
 
