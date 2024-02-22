@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ComponentScan("lk.ijse.gdse66.spring.bean")
-@ImportResource("classpath:context.xml")
-@Import({DAOConfig.class, BOConfig.class})
+@ImportResource("classpath:context.xml")/* import xml-based configuration files */
+@Import({DAOConfig.class, BOConfig.class}) /* import another configuration classes into a single configuration class*/
 public class AppConfig {
 }
